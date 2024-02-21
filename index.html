@@ -1,9 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My First Webpage </title>
-    </head>
-    <body>
-            
-        </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Unsubscribe Confirmation</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevents scrolling */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100vw; /* Fixed viewport width */
+        }
+
+        button {
+            transition: all 0.5s ease;
+            padding: 0.1rem 0.4rem; /* Further reduced size */
+            font-size: 0.6rem; /* Smaller font size */
+            width: auto; /* Adjust width based on content */
+            max-width: 60px; /* Max width to further reduce size */
+        }
+
+        button:hover {
+            transform: translateX(50px) translateY(50px);
+        }
+    </style>
+    <script>
+        function makeButtonFloat() {
+            const btn = document.getElementById('unsubscribeBtn');
+            btn.style.position = 'absolute';
+            btn.style.top = Math.random() * window.innerHeight + 'px';
+            btn.style.left = Math.random() * window.innerWidth + 'px';
+        }
+    </script>
+</head>
+<body>
+    <main class="container">
+        <h2>Are you sure you want to unsubscribe?</h2>
+        <button id="unsubscribeBtn" onmouseover="makeButtonFloat()" class="primary">Unsubscribe</button>
+    </main>
+</body>
 </html>
