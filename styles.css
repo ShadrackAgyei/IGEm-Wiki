@@ -9,7 +9,7 @@
   }
   
   header {
-    background-image: url('your-image-path.jpg');
+    background-image: url('Images/beach1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -23,7 +23,7 @@
   }
   
   .logo {
-    color: #fff;
+    color: #6b365b;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -36,7 +36,7 @@
   
   .nav-links li a {
     transition: all 0.3s ease 0s;
-    color: #fff;
+    color: #2b03dd;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -94,3 +94,29 @@
     margin: 10px 0;
   }
   
+  .beginning {
+    border: solid 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .beginning-top {
+    border: solid 2px blueviolet;
+    height: 500px;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .beginning-top h1 {
+    color: #2b03dd;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .beginning-bottom {
+    border: solid 2px rgb(43, 76, 226);
+    height: 500px;
+    width: 50%;
+    justify-content: center;
+  }
